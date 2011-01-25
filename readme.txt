@@ -8,6 +8,9 @@
    3. The suspect file contents pass a chi-square distribution test.
    4. The suspect file must not contain a common file header.
 
+* TCHunt 1.5a has been released under the GPLv3 software license.
+  Older versions of TCHunt were released under a non-free license.
+
 * Visit the TCHunt homepage for more details:
 
    http://16s.us/TCHunt/
