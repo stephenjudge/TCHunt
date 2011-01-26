@@ -836,7 +836,7 @@ int main()
 		std::setlocale( LC_ALL, "german" );
 
 		lang::copyright = "\xA9 2007-2011 '16 Systems' \xAE. Alle Rechte vorbehalten.\n\n";
-                lang::license = "TCHunt\n\nSoftware-Lizenz - http://16s.us/non_free_license\n"
+                lang::license = "TCHunt\n\nSoftware-Lizenz - http://www.gnu.org/licenses/gpl.txt\n"
 				"Akzeptieren Sie die Lizenzbedingungen?";    
 		lang::yes = "Suche, bitte warten...";
 		lang::end = "@C1@bFertig";
@@ -873,7 +873,7 @@ int main()
 		std::setlocale( LC_ALL, "american" );
 
 		lang::copyright = "\xA9 2007-2011 '16 Systems' \xAE. All rights reserved.\n\n";
-                lang::license = "TCHunt\n\nSoftware License - http://16s.us/non_free_license\n"
+                lang::license = "TCHunt\n\nSoftware License - http://www.gnu.org/licenses/gpl.txt\n"
 				"Do you accept?";    
 		lang::yes = "Searching please wait...";
 		lang::end = "@C1@bFinished";
@@ -910,7 +910,7 @@ int main()
 		std::setlocale( LC_ALL, "french" );
 		
 		lang::copyright = "\xA9 2007-2011 '16 Systems' \xAE. Tous droits réservés.\n\n";
-		lang::license = "TCHunt\n\nLicence de logiciel - http://16s.us/non_free_license\n"
+		lang::license = "TCHunt\n\nLicence de logiciel - http://www.gnu.org/licenses/gpl.txt\n"
 				"Acceptez-vous la Licence?";    
 		lang::yes = "Recherche en cours, patientez svp...";
 		lang::end = "@C1@bRecherche Terminée";
@@ -945,7 +945,7 @@ int main()
 		std::setlocale( LC_ALL, "spanish" );
 		
 		lang::copyright = "\xA9 2007-2011 '16 Systems' \xAE. Todos los derechos reservados.\n\n";
-		lang::license = "TCHunt\n\nLicencia de software - http://16s.us/non_free_license\n"
+		lang::license = "TCHunt\n\nLicencia de software - http://www.gnu.org/licenses/gpl.txt\n"
 				"¿Lo acepta?";    
 		lang::yes = "Buscando, por favor espere...";
 		lang::end = "@C1@bTerminado";
@@ -981,7 +981,7 @@ int main()
 		std::setlocale( LC_ALL, "italian" );
 		
 		lang::copyright =   "\xA9 2007-2011 '16 Systems' \xAE. Tutti i diritti riservati.\n\n";
-                lang::license = "TCHunt\n\nLicenza Software - http://16s.us/non_free_license\n"
+                lang::license = "TCHunt\n\nLicenza Software - http://www.gnu.org/licenses/gpl.txt\n"
 				"Accetti?";    
 		lang::yes = "Ricerca in corso, attendere...";
 		lang::end = "@C1@bTerminato";
@@ -1017,7 +1017,7 @@ int main()
 		std::setlocale( LC_ALL, "indonesian" );
 		
 		lang::copyright =   "\xA9 2007-2011 '16 Systems' \xAE. Hak cipta.\n\n";
-                lang::license = "TCHunt\n\nLisensi software - http://16s.us/non_free_license\n"
+                lang::license = "TCHunt\n\nLisensi software - http://www.gnu.org/licenses/gpl.txt\n"
 				"Apakah anda setuju?";    
 		lang::yes = "Sedang mencari, mohon tunggu";
 		lang::end = "@C1@bSelesai";
@@ -1052,7 +1052,7 @@ int main()
 		std::setlocale( LC_ALL, "portuguese" );
 		
 		lang::copyright =   "\xA9 2007-2011 '16 Systems' \xAE. Todos os direitos reservados.\n\n";
-                lang::license = "TCHunt\n\nLicença de Software - http://16s.us/non_free_license\n"
+                lang::license = "TCHunt\n\nLicença de Software - http://www.gnu.org/licenses/gpl.txt\n"
 				" Vocês aceitam?";    
 		lang::yes = "Pesquisando por favor aguarde...";
 		lang::end = "@C1@bTerminado";
@@ -1088,7 +1088,7 @@ int main()
 		
 		//Fl::set_font(FL_HELVETICA, "Kochi Gothic");
 		lang::copyright =   "\xA9 2007-2011 '16 Systems' \xAE. \xE8\xA4\x87\xE8\xA3\xBD\xE6\xA8\xA9\xE6\x89\x80\xE6\x9C\x89\n\n";
-                lang::license = "TCHunt\n\n\xE3\x82\xBD\xE3\x83\x95\xE3\x83\x88\xE3\x82\xA6\xE3\x82\xA7\xE3\x82\xA2\xE5\x85\x8D\xE8\xA8\xB1\xE8\xA8\xBC - http://16s.us/non_free_license\n"
+                lang::license = "TCHunt\n\n\xE3\x82\xBD\xE3\x83\x95\xE3\x83\x88\xE3\x82\xA6\xE3\x82\xA7\xE3\x82\xA2\xE5\x85\x8D\xE8\xA8\xB1\xE8\xA8\xBC - http://www.gnu.org/licenses/gpl.txt\n"
 				"\xE5\x8F\x97\xE3\x81\x91\xE5\x85\xA5\xE3\x82\x8C\xE3\x82\x8B\xE3\x81\x8B?";    
 		lang::yes = "\xE6\x8D\x9C\xE5\xBE\x85\xE3\x81\xA1\xE3\x81\xAA\xE3\x81\x95\xE3\x81\x84...";
 		lang::end = "@C1@b\xE7\xB5\x82\xE4\xBA\x86\xE3\x81\x99\xE3\x82\x8B";
@@ -1129,7 +1129,7 @@ int main()
 		
 		//Fl::set_font(FL_HELVETICA, "Kochi Gothic");
 		lang::copyright =   "\xA9 2007-2011 '16 Systems' \xAE. \xE7\x89\x88\xE6\x9D\x83\xE6\x89\x80\xE6\x9C\x89\n\n";
-                lang::license = "TCHunt\n\n\xE8\xBD\xAF\xE4\xBB\xB6\xE6\x8E\x88\xE6\x9D\x83 - http://16s.us/non_free_license\n"
+                lang::license = "TCHunt\n\n\xE8\xBD\xAF\xE4\xBB\xB6\xE6\x8E\x88\xE6\x9D\x83 - http://www.gnu.org/licenses/gpl.txt\n"
 				"\xE6\x82\xA8\xE6\x98\xAF\xE5\x90\xA6\xE6\x8E\xA5\xE5\x8F\x97?";    
 		lang::yes = "\xE6\xAD\xA3\xE5\x9C\xA8\xE6\x90\x9C\xE7\xB4\xA2, \xE8\xAF\xB7\xE7\xAD\x89\xE5\xBE\x85...";
 		lang::end = "@C1@b\xE5\xB7\xB2\xE5\xAE\x8C\xE6\x88\x90";
@@ -1174,8 +1174,7 @@ int main()
 	fl_yes = lang::y.c_str();
   
 	// Make user click 'Yes' to software license agreement. Otherwise, exit. 
-	// comment out for autoit testing.
-	if (fl_choice(lang::license.c_str(), lang::n.c_str(), 0, lang::y.c_str()) == 2)
+	if ( fl_choice( lang::license.c_str(), lang::n.c_str(), 0, lang::y.c_str() ) == 2 )
 	{	
 		// Pick Folder to Search. If they select 'Cancel', pick is NULL
 		std::string pick = rbt_select();
@@ -1183,7 +1182,7 @@ int main()
 		if ( pick == "no_pick_rbt" )
 			return Fl::run();
 		
-		// Fix FLTK bug (add / to end of path on drives C:, D:, etc)
+		// Fix FLTK bug (add / to end of path on drives C:, D:, etc.)
 		std::string r( pick );
 		std::reverse( r.begin(), r.end() );
 		
@@ -1204,7 +1203,6 @@ int main()
 		box->align( Fl_Align( FL_ALIGN_BOTTOM_LEFT|FL_ALIGN_INSIDE ) );
 		win->resizable( op );
 		save_but->deactivate();
-		//win->icon((char *)LoadIcon(fl_display, MAKEINTRESOURCE(IDI_ICON1)));
 		
 		// Don't allow user to make Window too small
 		win->size_range( 450, 245, 0, 0, 0, 0, 0);
@@ -1220,23 +1218,22 @@ int main()
 		// Use 19456 (19KB minimum) for debugging
 		unsigned int tc_min_file_size = 19456;
 		
-		// Use 1048576*15 (15 MB minimum) for release
+		// Use 1048576*5 (5 MB minimum) for release
 		if ( build::mode == "release" )
 			tc_min_file_size = 1048576*5;		
  		
 		// Create report files when in debug mode.
 		cf( build::mode );
  		
-		// Suspect File Count is the number of possible TC files found
+		// Suspect File Count is the number of files found that contain the four TCHunt attributes
 		int sfc = 0;
 
 		files( pick.c_str(), tc_min_file_size, sfc, build::mode, op );	 		
 		  
-		// Show user TCHunt has finished and optionally activate save button..
+		// Show user TCHunt has finished and activate save button.
 		op->add("\n");
 		op->add( ( lang::end + " " + pick ).c_str() );
-		if ( build::ver == "Full" )
-			save_but->activate();
+		save_but->activate();
 	}
   
 	return Fl::run();  
