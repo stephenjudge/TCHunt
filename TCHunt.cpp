@@ -833,7 +833,7 @@ int main()
 	// German - Done!!!
 	if ( build::lang == "de" )
 	{
-		std::setlocale( LC_ALL, "german" );
+		std::locale( "" );
 
 		lang::copyright = "\xA9 2007-2011 '16 Systems' \xAE. Alle Rechte vorbehalten.\n\n";
                 lang::license = "TCHunt\n\nSoftware-Lizenz - http://www.gnu.org/licenses/gpl.txt\n"
@@ -862,7 +862,7 @@ int main()
 		
 		if ( build::mode == "debug" )
 		{
-			fl_alert( std::setlocale( LC_ALL, 0 ) );
+			fl_alert( std::locale("").name().c_str() );
 		}
 			
 	}
@@ -870,7 +870,7 @@ int main()
 	// English - Done!!!
 	if ( build::lang == "en" )
 	{
-		std::setlocale( LC_ALL, "american" );
+		std::locale( "" );
 
 		lang::copyright = "\xA9 2007-2011 '16 Systems' \xAE. All rights reserved.\n\n";
                 lang::license = "TCHunt\n\nSoftware License - http://www.gnu.org/licenses/gpl.txt\n"
@@ -899,7 +899,7 @@ int main()
 		
 		if ( build::mode == "debug" )
 		{
-			fl_alert( std::setlocale( LC_ALL, 0 ) );
+			fl_alert( std::locale("").name().c_str() );
 		}
 			
 	}
@@ -907,7 +907,7 @@ int main()
 	// French - Done!!!
 	if ( build::lang == "fr" )
 	{
-		std::setlocale( LC_ALL, "french" );
+		std::locale( "" );
 		
 		lang::copyright = "\xA9 2007-2011 '16 Systems' \xAE. Tous droits réservés.\n\n";
 		lang::license = "TCHunt\n\nLicence de logiciel - http://www.gnu.org/licenses/gpl.txt\n"
@@ -936,13 +936,13 @@ int main()
 		
 		if ( build::mode == "debug" )
 		{
-			fl_alert(std::setlocale( LC_ALL, 0 ) );
+			fl_alert( std::locale("").name().c_str() );
 		}
 	}
 	
 	if ( build::lang == "es" )
 	{
-		std::setlocale( LC_ALL, "spanish" );
+		std::locale( "" );
 		
 		lang::copyright = "\xA9 2007-2011 '16 Systems' \xAE. Todos los derechos reservados.\n\n";
 		lang::license = "TCHunt\n\nLicencia de software - http://www.gnu.org/licenses/gpl.txt\n"
@@ -971,14 +971,14 @@ int main()
 		
 		if ( build::mode == "debug" )
 		{
-			fl_alert( std::setlocale( LC_ALL, 0 ) );
+			fl_alert( std::locale("").name().c_str() );
 		}
 	}
   
 	// Italian - Done!!!
 	if ( build::lang == "it" )
 	{
-		std::setlocale( LC_ALL, "italian" );
+		std::locale( "" );
 		
 		lang::copyright =   "\xA9 2007-2011 '16 Systems' \xAE. Tutti i diritti riservati.\n\n";
                 lang::license = "TCHunt\n\nLicenza Software - http://www.gnu.org/licenses/gpl.txt\n"
@@ -1007,14 +1007,14 @@ int main()
 		
 		if ( build::mode == "debug" )
 		{
-			fl_alert( std::setlocale( LC_ALL, 0 ) );
+			fl_alert( std::locale("").name().c_str() );
 		}
 	}
 	
 	// Indonesian - Done!!!
 	if ( build::lang == "in" )
 	{
-		std::setlocale( LC_ALL, "indonesian" );
+		std::locale( "" );
 		
 		lang::copyright =   "\xA9 2007-2011 '16 Systems' \xAE. Hak cipta.\n\n";
                 lang::license = "TCHunt\n\nLisensi software - http://www.gnu.org/licenses/gpl.txt\n"
@@ -1043,13 +1043,13 @@ int main()
 		
 		if ( build::mode == "debug" )
 		{
-			fl_alert( std::setlocale( LC_ALL, 0 ) );
+			fl_alert( std::locale("").name().c_str() );
 		}
 	}
 	
 	if ( build::lang == "pt" )
 	{
-		std::setlocale( LC_ALL, "portuguese" );
+		std::locale( "" );
 		
 		lang::copyright =   "\xA9 2007-2011 '16 Systems' \xAE. Todos os direitos reservados.\n\n";
                 lang::license = "TCHunt\n\nLicença de Software - http://www.gnu.org/licenses/gpl.txt\n"
@@ -1078,13 +1078,13 @@ int main()
 		
 		if ( build::mode == "debug" )
 		{
-			fl_alert(std::setlocale( LC_ALL, 0 ) );
+			fl_alert( std::locale("").name().c_str() );
 		}
 	}
 
 	if ( build::lang == "jp" )
 	{
-		std::setlocale( LC_ALL, "japanese" );
+		std::locale( "" );
 		
 		//Fl::set_font(FL_HELVETICA, "Kochi Gothic");
 		lang::copyright =   "\xA9 2007-2011 '16 Systems' \xAE. \xE8\xA4\x87\xE8\xA3\xBD\xE6\xA8\xA9\xE6\x89\x80\xE6\x9C\x89\n\n";
@@ -1114,7 +1114,7 @@ int main()
 		
 		if ( build::mode == "debug" )
 		{
-			fl_alert(std::setlocale( LC_ALL, 0 ) );
+			fl_alert( std::locale("").name().c_str() );
 		}
 		
 		// 1. Babelfish - English to Japanese.
@@ -1125,7 +1125,7 @@ int main()
 	// Chinese - Done!!!
 	if ( build::lang == "cn" )
 	{
-		std::setlocale( LC_ALL, "chinese" );
+		std::locale( "" );
 		
 		//Fl::set_font(FL_HELVETICA, "Kochi Gothic");
 		lang::copyright =   "\xA9 2007-2011 '16 Systems' \xAE. \xE7\x89\x88\xE6\x9D\x83\xE6\x89\x80\xE6\x9C\x89\n\n";
@@ -1155,7 +1155,7 @@ int main()
 		
 		if ( build::mode == "debug" )
 		{
-			fl_alert(std::setlocale( LC_ALL, 0 ) );
+			fl_alert( std::locale("").name().c_str() );
 		}
 	}
 	  
