@@ -8,8 +8,7 @@
    3. The suspect file contents pass a chi-square distribution test.
    4. The suspect file must not contain a common file header.
 
-* TCHunt 1.5a has been released under the GPLv3 software license.
-  Older versions of TCHunt were released under a non-free license.
+* As of version 1.5a, TCHunt is distributed solely under the GPL software license.
 
 * To compile TCHunt, you need the boost and FLTK libraries. I link statically
   and you should consider doing that as well. Read the build scripts to see how
