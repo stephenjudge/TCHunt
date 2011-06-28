@@ -1,31 +1,31 @@
-// ~ #####################################################
-// ~ Copyright 2007-2011 16Systems, LLC. All rights reserved.
+// #####################################################
+// Copyright 2007-2011 16Systems, LLC. All rights reserved.
 
-//~ TCHunt is free software: you can redistribute it and/or modify
-//~ it under the terms of the GNU General Public License as published by
-//~ the Free Software Foundation, either version 3 of the License, or
-//~ (at your option) any later version.
+// TCHunt is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
 
-//~ TCHunt is distributed in the hope that it will be useful,
-//~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-//~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//~ GNU General Public License for more details.
+// TCHunt is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
 
-//~ You should have received a copy of the GNU General Public License
-//~ along with TCHunt.  If not, see <http://www.gnu.org/licenses/>.
+// You should have received a copy of the GNU General Public License
+// along with TCHunt.  If not, see <http://www.gnu.org/licenses/>.
 
-//~ Email brad@16s.us
+// Email brad@16s.us
 
-//~ 16 Systems, LLC
-//~ P.O. Box 356
-//~ Blacksburg, VA
-//~ 24063 
-//~ #####################################################
+// 16 Systems, LLC
+// P.O. Box 356
+// Blacksburg, VA
+// 24063 
+// #####################################################
 
 // Boost Includes
 #include "boost/date_time/posix_time/posix_time.hpp"	// ISO Time
 #include "boost/date_time/gregorian/gregorian.hpp"	// ISO Date
-#include "boost/filesystem/operations.hpp"			// Filesystem Iteration
+#include "boost/filesystem/operations.hpp"		// Filesystem Iteration
 
 // Standard Includes
 #include <iostream>
@@ -48,7 +48,6 @@
 
 
 // Globals
-
 namespace build
 {
 	// Set to de, en, fr, es, it, jp, pt or  cn.
@@ -56,17 +55,15 @@ namespace build
 	
 	// Set to debug or release.
 	const static std::string mode = "release";
-  
-	// Set to Trial or Full
-	// Trial cannot save reports and only searches optical drives.
-	const static std::string ver = "Full";
 }	
 
-// When releasing builds, make no edits below this point. #######################
 
 namespace lang
 {
-	const static std::string version_date = "TCHunt 1.5a";
+	const static std::string version_date = "TCHunt 1.5b";
+
+	// When releasing builds, make no edits below this point. #######################
+
 	std::string static copyright;
 	std::string static license;
 	std::string static yes;
@@ -93,12 +90,9 @@ namespace lang
 }
 
 
-//###########################################################
 // Create output files when in 'debug' mode.
-
-inline void cf( const std::string& mode )
+void cf( const std::string& mode )
 {
-  
 	if ( mode == "debug" )
 	{
 		std::ofstream rfile ( "random.txt" );
@@ -122,14 +116,11 @@ inline void cf( const std::string& mode )
   
 	else
 		return;
-	
 }
 
 
-//###########################################################
-// Skip files that fail the modulo test.
-
-inline bool modulo( const std::string& file_path, const uintmax_t file_size, const std::string& mode )
+// Skip files that fail the modulo 512 test.
+bool modulo( const std::string& file_path, const uintmax_t file_size, const std::string& mode )
 {
 	// File Passed
 	if ( file_size % 512 == 0 )
@@ -161,10 +152,8 @@ inline bool modulo( const std::string& file_path, const uintmax_t file_size, con
 }
 
 
-//#############################################################
 // Skip files that are not made-up of evenly distributed bytes. Chi Squared Distribution.
-
-inline bool X2( const std::string& file_path, const std::string& mode )
+bool X2( const std::string& file_path, const std::string& mode )
 {
 	// sample_size = bytes read.
 	// possibilities = number of possible byte values.
@@ -280,10 +269,8 @@ inline bool X2( const std::string& file_path, const std::string& mode )
 }
 
 
-//###########################################################
-// Skip Certian files based on the file header (up to 4 bytes). 
-
-inline bool header( const std::string& file_path, const std::string& mode )
+// Skip Certain files based on the file header (up to 4 bytes). 
+bool header( const std::string& file_path, const std::string& mode )
 {
 	int i = 0;
 
@@ -319,11 +306,10 @@ inline bool header( const std::string& file_path, const std::string& mode )
 			return false;
 	}
 	
-	int byte1, byte2, byte3, byte4;
-	byte1 = header_bytes[0];
-	byte2 = header_bytes[1];
-	byte3 = header_bytes[2];
-	byte4 = header_bytes[3];    
+	int byte1 = header_bytes[0];
+	int byte2 = header_bytes[1];
+	int byte3 = header_bytes[2];
+	int byte4 = header_bytes[3];    
 	
 	// Skip GZIP files
 	//
@@ -590,9 +576,7 @@ inline bool header( const std::string& file_path, const std::string& mode )
 }
 
 
-//###########################################################
-// Iterate through the filesystem applying tests.
-
+// Iterate through the filesystem applying tests to files.
 void files( const boost::filesystem::path& dir_path, const unsigned int tc_min_file_size, int& sfc, const std::string& mode, Fl_Browser * op )
 {
   
@@ -640,7 +624,7 @@ void files( const boost::filesystem::path& dir_path, const unsigned int tc_min_f
 				// 1. If the file is above minimum file size and it not the exact same size of oembios.bin, pass it on
 				if ( filesize >= tc_min_file_size and filesize != 13107200 )
 				{				
-					// 2. If the file passess the modulo test, pass it on
+					// 2. If the file passes the modulo test, pass it on
 					if ( modulo( str_path, filesize, mode ) == true )
 					{
 
@@ -691,17 +675,15 @@ void files( const boost::filesystem::path& dir_path, const unsigned int tc_min_f
 }
 
 
-// Define Callbacks here ##############################################
-
-
-inline void rbt_quit( Fl_Widget* w )
+// Define GUI Callbacks
+void rbt_quit( Fl_Widget* w )
 {
 	// Closes TCHunt when user selects x button. Required.
 	exit( 1 );
 }
 
 
-inline void rbt_save( Fl_Widget* w, void* op)
+void rbt_save( Fl_Widget* w, void* op)
 {
 	// Localize file chooser
 	Fl_File_Chooser::all_files_label = lang::all.c_str();
@@ -825,8 +807,7 @@ std::string rbt_select()
 }
 
 
-// Main #######################################################
-
+// Main
 int main()
 {
 	
@@ -1173,7 +1154,7 @@ int main()
 	fl_ok = lang::ok.c_str();
 	fl_yes = lang::y.c_str();
   
-	// Make user click 'Yes' to software license agreement. Otherwise, exit. 
+	// Make user acknowledge and accept that TCHunt if distributed under the GPL license. If they do not accept this, then exit. 
 	if ( fl_choice( lang::license.c_str(), lang::n.c_str(), 0, lang::y.c_str() ) == 2 )
 	{	
 		// Pick Folder to Search. If they select 'Cancel', pick is NULL
