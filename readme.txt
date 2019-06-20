@@ -14,9 +14,5 @@
   and you should consider doing that as well. Read the build scripts to see how
   I compile TCHunt.
 
-* Visit the TCHunt homepage for more details:
-
-   http://16s.us/TCHunt/
-
 END
 
